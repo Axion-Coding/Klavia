@@ -22931,22 +22931,30 @@ span.version {
   font-weight: bold;
 }
 
-body[data-bs-theme=light]::before {
-  background: url(bg_day_season4-3c1c694c59e5c07660a42ccb2443e86e2be08ff774574e0beb1abd0f0643cd45.png);
-  background-size: cover; /* Ensure the background image covers the entire page */
-  background-attachment: fixed; /* Keeps the background fixed while scrolling */
-  background-position: center; /* Centers the background */
-  background-repeat: repeat; /* Makes the image repeat as the user scrolls */
-  opacity: 0.35; /* Adjust this value for desired transparency */
+body::before {
+  content: "";
+  position: fixed; /* Make sure it covers the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Push it behind all content */
+  pointer-events: none; /* Prevent it from blocking clicks */
+  transition: opacity 0.4s ease, background 0.6s ease;
 }
 
+/* Light theme background */
+body[data-bs-theme=light]::before {
+  background: url("bg_day_season4-3c1c694c59e5c07660a42ccb2443e86e2be08ff774574e0beb1abd0f0643cd45.png") center center / cover repeat;
+  background-attachment: fixed;
+  opacity: 0.35; /* Slightly visible background */
+}
+
+/* Dark theme background */
 body[data-bs-theme=dark]::before {
-  background: url(bg_night_season4-c29de26275bc43a0a84518c3e6912f3e10f1a01f898da1da4e54623e250a3063.png);
-  background-size: cover; /* Ensure the background image covers the entire page */
-  background-attachment: fixed; /* Keeps the background fixed while scrolling */
-  background-position: center; /* Centers the background */
-  background-repeat: repeat; /* Makes the image repeat as the user scrolls */
-  opacity: 0.2; /* Adjust this value for desired transparency */
+  background: url("bg_night_season4-c29de26275bc43a0a84518c3e6912f3e10f1a01f898da1da4e54623e250a3063.png") center center / cover repeat;
+  background-attachment: fixed;
+  opacity: 0.25; /* A little darker for contrast */
 }
 
 .brackets-viewer {
