@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-  <title>Sign in - Klavia</title>
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="Klavia is a fast-paced multiplayer typing game where you race others, complete quests, and climb the leaderboard. Join the competition today!" name="description">
-  <meta content="typing game, multiplayer typing, online typing, race typing game, Klavia" name="keywords">
-  <link href="https://klavia.io/racers/sign_in" rel="canonical">
-  <meta content="no-preview" name="turbo-cache-control">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<title>Sign in - Klavia</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta content="Klavia is a fast-paced multiplayer typing game where you race others, complete quests, and climb the leaderboard. Join the competition today!" name="description">
+<meta content="typing game, multiplayer typing, online typing, race typing game, Klavia" name="keywords">
+<link href="https://klavia.io/racers/sign_in" rel="canonical">
+<meta content="no-preview" name="turbo-cache-control">
 
-  <!-- CSRF tokens can be left as-is or removed since we're now using Formspree -->
-  <meta name="csrf-param" content="authenticity_token" />
-  <meta name="csrf-token" content="Pth-PrJit6xGgtKFrNZULDpUGPBxpnNj84kUIKu420vfJKw1rvRUzJFFgdFlO96jqCYhib2kmbplDDS-mWMk3w" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Pth-PrJit6xGgtKFrNZULDpUGPBxpnNj84kUIKu420vfJKw1rvRUzJFFgdFlO96jqCYhib2kmbplDDS-mWMk3w" />
 
-  <!-- ✅ Added font stylesheet -->
-  <link rel="stylesheet" href="fonts.googleapis.css2">
+<!-- ✅ Added font stylesheet -->
+<link rel="stylesheet" href="fonts.googleapis.css2">
 
-  <link rel="stylesheet" href="application-01bb6abc2e3f2052be4c9e4c6b3f503033fc255e345c790fe4dba7055f510e05.css" data-turbo-track="reload" />
-  <meta content="none" name="jwt-token">
+<link rel="stylesheet" href="application-01bb6abc2e3f2052be4c9e4c6b3f503033fc255e345c790fe4dba7055f510e05.css" data-turbo-track="reload" />
+<meta content="none" name="jwt-token">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link rel="stylesheet" href="cookieconsent.css">
-  <link href='favicon.ico' rel='icon' type='image/x-icon'>
+<link rel="stylesheet" href="cookieconsent.css">
+<link href="favicon.ico" rel="icon" type="image/x-icon">
 
-  <link rel="stylesheet" href="brackets-viewer.min.css" />      
-  <script type="text/javascript" src="brackets-viewer.min.js"></script>
+<link rel="stylesheet" href="brackets-viewer.min.css" />      
+<script type="text/javascript" src="brackets-viewer.min.js"></script>
 
-  <!-- ✅ Fixed: was incorrectly linked as a stylesheet -->
-  <script src="simple-databases.js" type="text/javascript"></script>
+<!-- ✅ Fixed: was incorrectly linked as a stylesheet -->
+<script src="simple-databases.js" type="text/javascript"></script>
 
-  <script src="cookieconsent.umd.js" defer="defer"></script>
-  <script src="application-b5d33e7088782d0f84e4813aa36332259495f4db9a37f22b56e955bf28fe2ed8.js" data-turbo-track="reload" defer="defer"></script>
+<script src="cookieconsent.umd.js" defer="defer"></script>
+<script src="application-b5d33e7088782d0f84e4813aa36332259495f4db9a37f22b56e955bf28fe2ed8.js" data-turbo-track="reload" defer="defer"></script>
 </head>
 <body data-bs-theme='dark' data-comp-id='-1' turbo-frame='true'>
 <nav class='navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body' data-bs-theme='dark'>
@@ -69,40 +68,37 @@
 </div>
 </div>
 </nav>
-
 <div class='container-sm mt-5' id='content'>
 <div style='position: relative;'>
 <div data-controller='easter-egg-loader' data-url='/racers/sign_in' id='easter-egg-container'></div>
 </div>
-
-<h2>Sign In</h2>
+<h2>
+Sign In
+</h2>
 <hr>
-
 <div class='row mb-3'>
 <div class='col-md-6 mt-2'>
 <div class='card page-intro'>
 <div class='card-body'>
-
-<!-- ✅ Formspree updated form -->
-<form action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST">
-  <div class='mb-3'>
-    <label for="racer_login">Login <abbr title="required">*</abbr></label>
-    <input class="form-control" id="racer_login" name="Login" type="text" placeholder="Email or username" required>
-  </div>
-  <div class='mb-3'>
-    <label for="racer_password">Password <abbr title="required">*</abbr></label>
-    <input class="form-control" id="racer_password" name="Password" type="password" required>
-  </div>
-  <div class='mb-3 form-check'>
-    <input class='form-check-input' type='checkbox' name='Remember Me' id='racer_remember_me'>
-    <label class='form-check-label' for='racer_remember_me'>Remember me</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Sign In</button>
-</form>
-
-<ul class='list list-inline mt-3 float-end small'>
+<form class="simple_form new_racer" id="new_racer" novalidate="novalidate" action="/racers/sign_in" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="__SW5wWtrwu2K60cx_5Js-pgJtVDFSvxFubP0niZBIoFecJKBv6lCzTH_Kgra7ernnw60LFKZKTjkLknTb9bYg" autocomplete="off" /><div class='form-inputs'>
+<div class="mb-3 string required racer_login"><label class="form-label string required" for="racer_login">Login <abbr title="required">*</abbr></label><input class="form-control string required" autofocus="autofocus" required="required" aria-required="true" type="text" value="" name="racer[login]" id="racer_login" /><div class="form-text">email or username</div></div>
+<div class="mb-3 password required racer_password"><label class="form-label password required" for="racer_password">Password <abbr title="required">*</abbr></label><div data-controller='password-visibility' data-password-visibility-hidden-class='d-none'>
+<div class='input-group'>
+<input class="password optional form-control" data-password-visibility-target="input" type="password" name="racer[password]" id="racer_password" />
+<button class='btn btn-outline-secondary' data-action='password-visibility#toggle' tabindex='-1' type='button'>
+<i class='fa fa-eye' data-password-visibility-target='icon'></i>
+<i class='fa fa-eye-slash d-none' data-password-visibility-target='icon'></i>
+</button>
+</div>
+</div>
+</div><fieldset class="mb-3 boolean optional racer_remember_me"><div class="form-check"><input name="racer[remember_me]" type="hidden" value="0" autocomplete="off" /><input class="form-check-input boolean optional" type="checkbox" value="1" name="racer[remember_me]" id="racer_remember_me" /><label class="form-check-label boolean optional" for="racer_remember_me">Remember me</label></div></fieldset>
+</div>
+<div class='form-actions'>
+<input type="submit" name="commit" value="Sign In" class="btn btn btn-primary" data-disable-with="Sign In" />
+</div>
+</form><ul class='list list-inline mt-3 float-end small'>
 <li class='list-inline-item'>
-<a href="https://klavia.com/racers/sign_up">Don't have an account?</a>
+<a href="https://klavia.com/racers/sign_up">Don&#39;t have an account?</a>
 </li>
 <li class='list-inline-item'>•</li>
 <li class='list-inline-item'>
@@ -110,14 +106,13 @@
 </li>
 <li class='list-inline-item'>•</li>
 <li class='list-inline-item'>
-<a href="https://klavia.io/racers/confirmation/new">Didn't receive confirmation instructions?</a>
+<a href="https://klavia.io/racers/confirmation/new">Didn&#39;t receive confirmation instructions?</a>
 </li>
 </ul>
 
 </div>
 </div>
 </div>
-
 <div class='col-md-6'>
 <img src="quests-224e77a8f6528dddcf2ea88d39fef603696ba23ff4a7d202e519bcf88bbc6607.png" />
 </div>
@@ -127,12 +122,14 @@
 <div class='modal-dialog modal-dialog-centered modal-dialog-scrollable'>
 <div class='modal-content'>
 <div class='modal-header'>
-<h3 class='modal-title mb-0'>Default Title</h3>
+<h3 class='modal-title mb-0'>
+Default Title
+</h3>
 <button aria-label='Close' class='btn-close' data-bs-dismiss='modal' type='button'></button>
 </div>
 <div class='modal-body'>
-<turbo-frame id="modal-body-frame"><div class='modal-body-content'></div></turbo-frame>
-</div>
+<turbo-frame id="modal-body-frame"><div class='modal-body-content'></div>
+</turbo-frame></div>
 <div class='modal-footer'>
 <button class='btn btn-secondary' data-bs-dismiss='modal' type='button'>Close</button>
 </div>
@@ -142,7 +139,6 @@
 
 <div id='garage-signals'></div>
 <div id='modal-signals'></div>
-
 </div>
 <script defer src="beacon.min.js"></script>
 </body>
