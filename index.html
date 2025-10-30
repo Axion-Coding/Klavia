@@ -1,139 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta charset="UTF-8">
 <title>Sign in - Klavia</title>
-<meta content='width=device-width,initial-scale=1' name='viewport'>
-<meta content='Klavia is a fast-paced multiplayer typing game where you race others, complete quests, and climb the leaderboard. Join the competition today!' name='description'>
-<meta content='typing game, multiplayer typing, online typing, race typing game, Klavia' name='keywords'>
-<link href='https://klavia.io/racers/sign_in' rel='canonical'>
-<meta content='no-preview' name='turbo-cache-control'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Klavia is a fast-paced multiplayer typing game where you race others, complete quests, and climb the leaderboard. Join the competition today!">
+<meta name="keywords" content="typing game, multiplayer typing, online typing, race typing game, Klavia">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 
-<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="Pth-PrJit6xGgtKFrNZULDpUGPBxpnNj84kUIKu420vfJKw1rvRUzJFFgdFlO96jqCYhib2kmbplDDS-mWMk3w" />
+<!-- CSS -->
+<link rel="stylesheet" href="application-01bb6abc2e3f2052be4c9e4c6b3f503033fc255e345c790fe4dba7055f510e05.css">
+<link rel="stylesheet" href="brackets-viewer.min.css">
+<link rel="stylesheet" href="cookieconsent.css">
 
-<link rel="stylesheet" href="/assets/application-01bb6abc2e3f2052be4c9e4c6b3f503033fc255e345c790fe4dba7055f510e05.css" data-turbo-track="reload" />
-<meta content='none' name='jwt-token'>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Bruno+Ace&family=Bungee+Inline&family=Butcherman&family=Henny+Penny&family=Mystery+Quest&family=Orbitron:wght@400..900&family=Pattaya&family=Rubik+Dirt&family=Sacramento&family=Trade+Winds&family=Prosto+One&family=Creepster&family=Sixtyfour&family=Rubik+Lines&family=Nothing+You+Could+Do&family=Inconsolata:wght@200..900&family=Jersey+25&family=Atomic+Age&family=Metal+Mania&family=Sedgwick+Ave+Display&family=Frijole&family=Monoton&family=Saira+Stencil+One&family=Metal+Mania&family=Blaka&family=Aladin&family=Audiowide&family=Cinzel+Decorative:wght@400;700;900&family=Combo&family=Megrim&family=Smythe&family=Eagle+Lake&family=Metal+Mania&family=Monoton&family=Underdog&family=Creepster&display=swap" rel="stylesheet">        
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
-<link href='/favicon.ico?v=3' rel='icon' type='image/x-icon'>
-<script src="/assets/application-b5d33e7088782d0f84e4813aa36332259495f4db9a37f22b56e955bf28fe2ed8.js" data-turbo-track="reload" defer="defer"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/brackets-viewer@latest/dist/brackets-viewer.min.css" />      
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brackets-viewer@latest/dist/brackets-viewer.min.js"></script>
-<link href='https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css' rel='stylesheet' type='text/css'>
-<script src='https://cdn.jsdelivr.net/npm/simple-datatables@latest' type='text/javascript'></script>
-<script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.umd.js" defer="defer"></script>
 </head>
-<body data-bs-theme='dark' data-comp-id='-1' turbo-frame='true'>
-<nav class='navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body' data-bs-theme='dark'>
-<div class='container'>
-<a class='navbar-brand' href='/'>
-<img width="180" src="/assets/klavia_season_4-01afdc85ba4890e3d03e0101e74c082b866493206c48d40a096126a825ddda1b.png" />
-</a>
-<button aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler' data-bs-target='#navbarSupportedContent' data-bs-toggle='collapse' type='button'>
-<span class='navbar-toggler-icon'></span>
-</button>
-<div class='collapse navbar-collapse' id='navbarSupportedContent'>
-<ul class='navbar-nav mb-2 mb-lg-0'>
-<li class='nav-item'><a class="nav-link" href="/leaderboards"><i class='fa fa-chart-line menu-icon  me-1'></i> <span class='menu-item'>Leaderboards</span></a></li>
-<li class='nav-item'>
-<a class="nav-link" href="/ktl"><i class='fa fa-trophy menu-icon me-1'></i> <span class='menu-item'>KTL</span></a>
-</li>
-<input data-controller='theme-select' type='hidden'>
-<li class='nav-item'>
-<a class='nav-link d-flex align-items-center' href='/videos'>
-<i class='fa fa-tv menu-icon me-1'></i> <span class='menu-item'>Klavia TV</span>
-</a>
-</li>
-<li class='nav-item'>
-<a class='nav-link d-flex align-items-center' href='/about'>
-<i class='fa fa-question menu-icon me-1'></i> <span class='menu-item'>About</span>
-</a>
-</li>
-<li class='nav-item'>
-<a class="nav-link" data-turbo="false" href="/racers/sign_in"><i class='fa fa-key text-success'></i> Sign in</a>
-</li>
-<li class='nav-item'>
-<a class="nav-link" data-turbo="false" href="/racers/sign_up"><b>Create Your Account!</b></a>
-</li>
-</ul>
-</div>
-</div>
+<body data-bs-theme="dark">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img width="180" src="logo.png" alt="Klavia Logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="/leaderboards">Leaderboards</a></li>
+        <li class="nav-item"><a class="nav-link" href="/ktl">KTL</a></li>
+        <li class="nav-item"><a class="nav-link" href="/videos">Klavia TV</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/racers/sign_in">Sign in</a></li>
+        <li class="nav-item"><a class="nav-link" href="/racers/sign_up"><b>Create Your Account!</b></a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
-<div class='container-sm mt-5' id='content'>
-<div style='position: relative;'>
-<div data-controller='easter-egg-loader' data-url='/racers/sign_in' id='easter-egg-container'></div>
-</div>
-<h2>
-Sign In
-</h2>
-<hr>
-<div class='row mb-3'>
-<div class='col-md-6 mt-2'>
-<div class='card page-intro'>
-<div class='card-body'>
-<form class="simple_form new_racer" id="new_racer" novalidate="novalidate" action="/racers/sign_in" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="__SW5wWtrwu2K60cx_5Js-pgJtVDFSvxFubP0niZBIoFecJKBv6lCzTH_Kgra7ernnw60LFKZKTjkLknTb9bYg" autocomplete="off" /><div class='form-inputs'>
-<div class="mb-3 string required racer_login"><label class="form-label string required" for="racer_login">Login <abbr title="required">*</abbr></label><input class="form-control string required" autofocus="autofocus" required="required" aria-required="true" type="text" value="" name="racer[login]" id="racer_login" /><div class="form-text">email or username</div></div>
-<div class="mb-3 password required racer_password"><label class="form-label password required" for="racer_password">Password <abbr title="required">*</abbr></label><div data-controller='password-visibility' data-password-visibility-hidden-class='d-none'>
-<div class='input-group'>
-<input class="password optional form-control" data-password-visibility-target="input" type="password" name="racer[password]" id="racer_password" />
-<button class='btn btn-outline-secondary' data-action='password-visibility#toggle' tabindex='-1' type='button'>
-<i class='fa fa-eye' data-password-visibility-target='icon'></i>
-<i class='fa fa-eye-slash d-none' data-password-visibility-target='icon'></i>
-</button>
-</div>
-</div>
-</div><fieldset class="mb-3 boolean optional racer_remember_me"><div class="form-check"><input name="racer[remember_me]" type="hidden" value="0" autocomplete="off" /><input class="form-check-input boolean optional" type="checkbox" value="1" name="racer[remember_me]" id="racer_remember_me" /><label class="form-check-label boolean optional" for="racer_remember_me">Remember me</label></div></fieldset>
-</div>
-<div class='form-actions'>
-<input type="submit" name="commit" value="Sign In" class="btn btn btn-primary" data-disable-with="Sign In" />
-</div>
-</form><ul class='list list-inline mt-3 float-end small'>
-<li class='list-inline-item'>
-<a href="/racers/sign_up">Don&#39;t have an account?</a>
-</li>
-<li class='list-inline-item'>•</li>
-<li class='list-inline-item'>
-<a href="/racers/password/new">Forgot your password?</a>
-</li>
-<li class='list-inline-item'>•</li>
-<li class='list-inline-item'>
-<a href="/racers/confirmation/new">Didn&#39;t receive confirmation instructions?</a>
-</li>
-</ul>
 
-</div>
-</div>
-</div>
-<div class='col-md-6'>
-<img src="/assets/quests-224e77a8f6528dddcf2ea88d39fef603696ba23ff4a7d202e519bcf88bbc6607.png" />
-</div>
+<!-- Main content -->
+<div class="container-sm mt-5" id="content">
+  <h2>Sign In</h2>
+  <hr>
+  <div class="row mb-3">
+    <div class="col-md-6 mt-2">
+      <div class="card page-intro">
+        <div class="card-body">
+          <form class="simple_form new_racer" id="new_racer" novalidate="novalidate" action="/racers/sign_in" method="post">
+            <div class="form-inputs">
+              <div class="mb-3 string required racer_login">
+                <label class="form-label string required" for="racer_login">Login <abbr title="required">*</abbr></label>
+                <input class="form-control string required" autofocus type="text" name="racer[login]" id="racer_login" />
+                <div class="form-text">email or username</div>
+              </div>
+              <div class="mb-3 password required racer_password">
+                <label class="form-label password required" for="racer_password">Password <abbr title="required">*</abbr></label>
+                <div class="input-group">
+                  <input class="form-control" type="password" name="racer[password]" id="racer_password" />
+                  <button class="btn btn-outline-secondary" type="button">
+                    <i class="fa fa-eye"></i>
+                    <i class="fa fa-eye-slash d-none"></i>
+                  </button>
+                </div>
+              </div>
+              <fieldset class="mb-3 boolean optional racer_remember_me">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="racer[remember_me]" id="racer_remember_me" />
+                  <label class="form-check-label" for="racer_remember_me">Remember me</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="form-actions">
+              <input type="submit" name="commit" value="Sign In" class="btn btn-primary" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img src="quests.png" alt="Sign-in Image" />
+    </div>
+  </div>
 </div>
 
-<div class='modal fade modal-lg' data-controller='modal' id='app-modal' tabindex='-1'>
-<div class='modal-dialog modal-dialog-centered modal-dialog-scrollable'>
-<div class='modal-content'>
-<div class='modal-header'>
-<h3 class='modal-title mb-0'>
-Default Title
-</h3>
-<button aria-label='Close' class='btn-close' data-bs-dismiss='modal' type='button'></button>
-</div>
-<div class='modal-body'>
-<turbo-frame id="modal-body-frame"><div class='modal-body-content'></div>
-</turbo-frame></div>
-<div class='modal-footer'>
-<button class='btn btn-secondary' data-bs-dismiss='modal' type='button'>Close</button>
-</div>
-</div>
-</div>
-</div>
+<!-- JS -->
+<script src="application-b5d33e7088782d0f84e4813aa36332259495f4db9a37f22b56e955bf28fe2ed8.js"></script>
+<script src="brackets-viewer.min.js"></script>
+<script src="cookieconsent.umd.js" defer></script>
+<script src="simple-databases.js"></script>
 
-<div id='garage-signals'></div>
-<div id='modal-signals'></div>
-</div>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"afb176af8a7a47f4998355c5a28af62d","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
