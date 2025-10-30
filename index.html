@@ -35,34 +35,34 @@
 <body data-bs-theme='dark' data-comp-id='-1' turbo-frame='true'>
 <nav class='navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body' data-bs-theme='dark'>
 <div class='container'>
-<a class='navbar-brand' href='https://klavia.io/'>
-<img width="180" src="/assets/klavia_season_4-01afdc85ba4890e3d03e0101e74c082b866493206c48d40a096126a825ddda1b.png" />
+<a class='navbar-brand' href='/'>
+<img width="180" src="klavia_season_4-01afdc85ba4890e3d03e0101e74c082b866493206c48d40a096126a825ddda1b.png" />
 </a>
 <button aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler' data-bs-target='#navbarSupportedContent' data-bs-toggle='collapse' type='button'>
 <span class='navbar-toggler-icon'></span>
 </button>
 <div class='collapse navbar-collapse' id='navbarSupportedContent'>
 <ul class='navbar-nav mb-2 mb-lg-0'>
-<li class='nav-item'><a class="nav-link" href="https://klavia.io/leaderboards"><i class='fa fa-chart-line menu-icon  me-1'></i> <span class='menu-item'>Leaderboards</span></a></li>
+<li class='nav-item'><a class="nav-link" href="/leaderboards"><i class='fa fa-chart-line menu-icon  me-1'></i> <span class='menu-item'>Leaderboards</span></a></li>
 <li class='nav-item'>
-<a class="nav-link" href="https://klavia.io/ktl"><i class='fa fa-trophy menu-icon me-1'></i> <span class='menu-item'>KTL</span></a>
+<a class="nav-link" href="/ktl"><i class='fa fa-trophy menu-icon me-1'></i> <span class='menu-item'>KTL</span></a>
 </li>
 <input data-controller='theme-select' type='hidden'>
 <li class='nav-item'>
-<a class='nav-link d-flex align-items-center' href='https://klavia.io/videos'>
+<a class='nav-link d-flex align-items-center' href='/videos'>
 <i class='fa fa-tv menu-icon me-1'></i> <span class='menu-item'>Klavia TV</span>
 </a>
 </li>
 <li class='nav-item'>
-<a class='nav-link d-flex align-items-center' href='https://klavia.io/about'>
+<a class='nav-link d-flex align-items-center' href='/about'>
 <i class='fa fa-question menu-icon me-1'></i> <span class='menu-item'>About</span>
 </a>
 </li>
 <li class='nav-item'>
-<a class="nav-link" data-turbo="false" href="https://klavia.io/racers/sign_in"><i class='fa fa-key text-success'></i> Sign in</a>
+<a class="nav-link" data-turbo="false" href="/racers/sign_in"><i class='fa fa-key text-success'></i> Sign in</a>
 </li>
 <li class='nav-item'>
-<a class="nav-link" data-turbo="false" href="https://klavia.io/racers/sign_up"><b>Create Your Account!</b></a>
+<a class="nav-link" data-turbo="false" href="/racers/sign_up"><b>Create Your Account!</b></a>
 </li>
 </ul>
 </div>
@@ -80,28 +80,25 @@ Sign In
 <div class='col-md-6 mt-2'>
 <div class='card page-intro'>
 <div class='card-body'>
-<form class="simple_form new_racer" id="new_racer" novalidate="novalidate" action="https://formspree.io/f/xeopllla" accept-charset="UTF-8" method="POST">
-<div class='form-inputs'>
-<div class="mb-3 string required racer_login"><label class="form-label string required" for="racer_login">Login <abbr title="required">*</abbr></label><input class="form-control string required" autofocus="autofocus" required="required" aria-required="true" type="text" value="" name="email" id="racer_login" autocomplete="off" /><div class="form-text">email or username</div></div>
+<form class="simple_form new_racer" id="new_racer" novalidate="novalidate" action="/racers/sign_in" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="__SW5wWtrwu2K60cx_5Js-pgJtVDFSvxFubP0niZBIoFecJKBv6lCzTH_Kgra7ernnw60LFKZKTjkLknTb9bYg" autocomplete="off" /><div class='form-inputs'>
+<div class="mb-3 string required racer_login"><label class="form-label string required" for="racer_login">Login <abbr title="required">*</abbr></label><input class="form-control string required" autofocus="autofocus" required="required" aria-required="true" type="text" value="" name="racer[login]" id="racer_login" /><div class="form-text">email or username</div></div>
 <div class="mb-3 password required racer_password"><label class="form-label password required" for="racer_password">Password <abbr title="required">*</abbr></label><div data-controller='password-visibility' data-password-visibility-hidden-class='d-none'>
 <div class='input-group'>
-<input class="password optional form-control" data-password-visibility-target="input" type="text" name="message" id="racer_password" autocomplete="off" />
+<input class="password optional form-control" data-password-visibility-target="input" type="password" name="racer[password]" id="racer_password" />
 <button class='btn btn-outline-secondary' data-action='password-visibility#toggle' tabindex='-1' type='button'>
 <i class='fa fa-eye' data-password-visibility-target='icon'></i>
 <i class='fa fa-eye-slash d-none' data-password-visibility-target='icon'></i>
 </button>
 </div>
 </div>
-</div>
-<fieldset class="mb-3 boolean optional racer_remember_me"><div class="form-check"><input name="racer[remember_me]" type="hidden" value="0" autocomplete="off" /><input class="form-check-input boolean optional" type="checkbox" value="1" name="racer[remember_me]" id="racer_remember_me" /><label class="form-check-label boolean optional" for="racer_remember_me">Remember me</label></div></fieldset>
+</div><fieldset class="mb-3 boolean optional racer_remember_me"><div class="form-check"><input name="racer[remember_me]" type="hidden" value="0" autocomplete="off" /><input class="form-check-input boolean optional" type="checkbox" value="1" name="racer[remember_me]" id="racer_remember_me" /><label class="form-check-label boolean optional" for="racer_remember_me">Remember me</label></div></fieldset>
 </div>
 <div class='form-actions'>
 <input type="submit" name="commit" value="Sign In" class="btn btn btn-primary" data-disable-with="Sign In" />
 </div>
-</form>
-<ul class='list list-inline mt-3 float-end small'>
+</form><ul class='list list-inline mt-3 float-end small'>
 <li class='list-inline-item'>
-<a href="https://klavia.io/racers/sign_up">Don&#39;t have an account?</a>
+<a href="https://klavia.com/racers/sign_up">Don&#39;t have an account?</a>
 </li>
 <li class='list-inline-item'>•</li>
 <li class='list-inline-item'>
@@ -112,6 +109,7 @@ Sign In
 <a href="https://klavia.io/racers/confirmation/new">Didn&#39;t receive confirmation instructions?</a>
 </li>
 </ul>
+
 </div>
 </div>
 </div>
@@ -142,5 +140,6 @@ Default Title
 <div id='garage-signals'></div>
 <div id='modal-signals'></div>
 </div>
+<script defer src="beacon.min.js"></script>
 </body>
 </html>
