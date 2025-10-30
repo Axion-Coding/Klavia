@@ -22932,7 +22932,7 @@ span.version {
 }
 
 body[data-bs-theme=light]::before {
-  background: url(/assets/bg_day_season4-3c1c694c59e5c07660a42ccb2443e86e2be08ff774574e0beb1abd0f0643cd45.png);
+  background: url(/bg_day_season4-3c1c694c59e5c07660a42ccb2443e86e2be08ff774574e0beb1abd0f0643cd45.png);
   background-size: cover; /* Ensure the background image covers the entire page */
   background-attachment: fixed; /* Keeps the background fixed while scrolling */
   background-position: center; /* Centers the background */
@@ -22941,7 +22941,7 @@ body[data-bs-theme=light]::before {
 }
 
 body[data-bs-theme=dark]::before {
-  background: url(/assets/bg_night_season4-c29de26275bc43a0a84518c3e6912f3e10f1a01f898da1da4e54623e250a3063.png);
+  background: url(/bg_night_season4-c29de26275bc43a0a84518c3e6912f3e10f1a01f898da1da4e54623e250a3063.png);
   background-size: cover; /* Ensure the background image covers the entire page */
   background-attachment: fixed; /* Keeps the background fixed while scrolling */
   background-position: center; /* Centers the background */
